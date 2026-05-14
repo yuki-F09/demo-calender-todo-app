@@ -2,6 +2,8 @@
 
 import dayGridPlugin from "@fullcalendar/daygrid";
 import FullCalendar from "@fullcalendar/react";
+import interactionPlugin from "@fullcalendar/interaction"
+
 
 
 const tasks = [
@@ -19,11 +21,15 @@ const tasks = [
 
 
 const Calendar = () => {
+  const handleDateClick= (info: { dateStr: string })=>{
+    console.log(info.dateStr)
+  }
   return (
     <div className="w-100">
         <FullCalendar
-          plugins={[dayGridPlugin]}
+          plugins={[dayGridPlugin, interactionPlugin]}
           events={tasks}
+          dateClick={handleDateClick}
         />
 
 

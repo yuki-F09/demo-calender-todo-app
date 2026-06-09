@@ -4,15 +4,30 @@ import {
   SidebarFooter,
   SidebarGroup,
   SidebarHeader,
+  SidebarMenu,
+  SidebarMenuButton,
 } from "@/components/ui/sidebar"
+
+import Link  from "next/link"
 
 export function AppSidebar() {
   return (
     <Sidebar>
-      <SidebarHeader />
+
+      <SidebarHeader className="text-violet-500">
+        <h1>タイトル</h1>
+      </SidebarHeader>
       <SidebarContent>
-        <SidebarGroup />
-        <SidebarGroup />
+        <SidebarGroup>
+          <SidebarMenuButton>
+            <Link href="/setting">設定</Link>
+            
+            
+          </SidebarMenuButton>
+
+
+        </SidebarGroup>
+
       </SidebarContent>
       <SidebarFooter />
     </Sidebar>

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "time-server": {
+      "command": "node",
+      "args": ["./mcp/time-server.js"]
+    }
+  }
+}

@@ -4,7 +4,6 @@ import {
   SidebarFooter,
   SidebarGroup,
   SidebarHeader,
-  SidebarMenu,
   SidebarMenuButton,
 } from "@/components/ui/sidebar"
 
